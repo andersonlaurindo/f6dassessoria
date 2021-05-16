@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: Poppins;
+    color: #011640;
+}
+
+h2 {
+    padding-top: 1rem;
+    margin-bottom: 3 rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #011640;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.destaque {
+    color: #e42427;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    min-height: 65px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.9);
+    z-index: 100;
+}
+
+.logo {
+    width: 0;
+}
+
+@media (min-width: 780px) {
+    .logo {
+        width: 60vw;
+    }
+}
+
+.logo__img {
+    display: none;
+}
+
+@media (min-width: 780px) {
+    .logo__img {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+}
+
+.navbar {
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (min-width: 780px) {
+    .navbar {
+        width: 35vw;
+    }
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar__link:hover {
+    color: #e42427;
+}
+
+/* home section */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 66px 0 0;
+    height: calc(100vh - 66px);
+    text-align: center;
+}
+
+@media (min-width: 810px) {
+    .home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;       
+        margin-left: 3rem;
+        margin-right: 3rem; 
+    }
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 4rem 0 1rem 1rem;
+}
+
+@media (min-width: 810px) {
+    .title {
+        font-size: 7rem;
+        margin: 0 2rem 0;
+    }
+}
+
+.subtitle {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 2rem 2rem;
+}
+
+
+@media(min-width: 810px) {
+    .subtitle {
+        font-size: 5rem;
+    }
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner__img {
+    display: initial;
+    min-width: 215px;
+    min-height: 160px;
+    margin: 0 5rem;
+}
+
+@media(min-width: 810px) {
+    .banner__img {
+        display: initial;
+        min-width: 215px;
+        min-height: 160px;
+        margin: 0;
+    }
+}
+
+/* atividades section */
+
+.atividades {
+    padding: 10rem 5rem;
+    text-align: center;
+}
+
+.atividades__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    grid-gap: 5rem;
+}
+
+@media(min-width: 400px) {
+    .atividades__grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        margin: 1.5rem auto;
+    }
+}
+
+.card {
+    position: relative;
+    padding-bottom: 1rem;
+    border: 1px solid rgba(217, 217, 217, 0.5);
+    border-radius: 5px;
+}
+
+.card__descricao {
+    padding: 1rem;
+    text-align: left;
+}
+
+.card__atividade {
+    margin: 2rem 0 2rem 0;
+}
+
+.card__atividade>span {
+    
+    font-weight: 400;
+}
+
+/* contato section */
+
+.contato {
+    margin-top: 2rem;
+    padding: 5rem 5rem;
+    text-align: center;
+    background-color: #011640;
+    color: #fff;
+}
+
+.contato__links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.contato__icon {
+    width: 2rem;
+    padding: 1rem;
+    filter: invert(100%);
+}
+
+.contato__details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.contato__details:hover .contato__icon {
+    filter: invert(83%) sepia(39%) saturate(6798%) hue-rotate(308deg) brightness(92%) contrast(107%);
+}
+
+.contato__details:hover {
+    color: #e42427;
+}
+
+.contato__phone {
+    color: #fff;
+}
+
+.contato__endereco {
+    margin: 1rem 0;
+}
+
+.contato__phone {
+    margin-bottom: 1rem;
+}
